@@ -1,3 +1,5 @@
 #!/bin/bash -x
 
-echo "Welcome to the Arithmatic Computing and Sorting Problem"
+read -p "Enter the value for a: " a
+read -p "Enter the value for b: " b
+read -p "Enter the value for c: " c
