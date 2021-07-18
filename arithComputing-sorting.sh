@@ -5,3 +5,4 @@ read -p "Enter the value for b: " b
 read -p "Enter the value for c: " c
 
 arith_Computation_1=$((a + b * c))
+arith_Computation_2=$((a * b + c))
