@@ -2,6 +2,7 @@
 
 declare -A arith_Computation
 declare -a result_Array
+declare -a asc_SortedResult
 
 read -p "Enter the value for a: " a
 read -p "Enter the value for b: " b
@@ -43,3 +44,9 @@ do
 done
 
 dsc_SortedResult=($(dsc_Sorting "${result_Array[@]}"))
+
+len=${#dsc_SortedResult[@]}
+for((i=0;i<len;i++))
+do
+	asc_SortedResult[i]=${dsc_SortedResult[$len-$i-1]}
+done
